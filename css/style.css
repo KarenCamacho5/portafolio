@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mate:ital@0;1&display=swap');
+
+/* Declaración de variables  */
+:root {
+    --font-parrafos: 'Mate', serif;
+    --font-titulos: 'Bebas Neue', sans-serif;
+    --color-principal: #561C24;
+    --color-secundario:#6D2932;
+    --color-terciario:#C7B7A3;
+    --color-cuarto:#E8D8C4;
+    --color-transparente: #561c24ad;
+  }
+  
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    color: var(--color-principal);
+    font-family: var(--font-titulos);
+    text-decoration: none;
+    font-size: 40px;
+    padding: 0 !important;
+}
+
+header nav{
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px 0;
+    margin: 0 15px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+nav li a:hover{
+    border-bottom: 2px solid var(--color-secundario);
+}
+
+header .card1{
+    position: relative;
+    background: var(--color-cuarto);
+}
+
+header .card1 h3{
+    position: relative;
+    color: var(--color-principal);
+    font-size: 32px;
+    font-family: var(--font-titulos);
+    left: 250px;
+    top: 150px;
+}
+
+.nombre{
+    position: relative;
+    color: #000000;
+    font-size: 140px;
+    font-family: var(--font-titulos);
+    left: 250px;
+    top: 150px;
+    z-index: 3;
+}
+
+header .card1 button{
+    position: relative;
+    width: 348px;
+    height: 82px;
+    background: #000;
+    color: #fff;
+    font-size: 30px;
+    font-family: var(--font-titulos);
+    left: 250px;
+    bottom: -150px;
+}
+
+header .card2{
+    position: relative;
+    background: var(--color-terciario);
+}
+
+header .card2 img{
+    position: relative;
+    right: -100px;
+    z-index: 4;
+}
+
+header .card3{
+    position: relative;
+    background: var(--color-principal);
+}
+
+header .card3 img{
+    position: relative;
+    right: -260px;
+    z-index: 4;
+}
+
+/* estilos de sobre mi */
+
+
+#sobre-mi .card4{
+    padding: 150px 0 150px 60px;
+    background: var(--color-terciario);
+}
+
+#sobre-mi .card4 img{
+    position: relative;
+    border-radius: 100%;
+    width: 500px;
+    height: 700px;
+    left: 350px;
+}
+
+
+#sobre-mi .card5 h2{
+    color: #000;
+    font-family: var(--font-titulos);
+    font-size: 90px;
+    text-align: center;
+    padding-top: 150px;
+    padding-left: 300PX;
+}
+
+
+#sobre-mi .card5 P{
+    color: #000;
+    width: 90%;
+    font-family: var(--font-parrafos);
+    text-align: left;
+    font-size: 32px;
+    padding-top: 20px;
+    padding-left: 300px;
+}
+
+
+
+/* estilos de habilidades */
+
+#habilidades {
+    padding: 40px;
+    background-image: url(../img/habilidades.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; 
+}
+
+#habilidades::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-transparente);
+    z-index: -1;
+  }
+
+#habilidades h2 {
+    color: #000;
+    font-family: var(--font-titulos);
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container1{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background: #C7B7A3;
+}
+
+.habilidad1{
+    padding: 20px 30px;
+    background: var(--color-secundario);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left-container{
+    left: 630px;
+}
+
+.left-container2{
+    left: 630px;
+}
+
+.right-container{
+    right: 30px;
+}
+.right-container2{
+    right: 30px;
+}
+
+
+.container1 img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    left: -50px;
+    top: 32px;
+    z-index: 10;
+}
+
+.circulo{
+    position: relative;
+    width: 40px;
+    border-radius: 50%;
+    right: -50px;
+    top: 32px;
+    z-index: 10;
+}
+
+.numero1{
+    position: relative;
+    width: 40px;
+    border-radius: 50%;
+    right: -50px;
+    top: 32px;
+    z-index: 11;
+}
+
+
+.right-container img{
+    left: 610px;
+}
+
+.right-container2 img{
+    left: 610px;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+
+/* estilos de proyectos */
+
+#proyectos {
+    padding: 40px;
+    background-image: url(../img/proyectos.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; 
+}
+
+#proyectos::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-transparente);
+    z-index: -1;
+}
+
+#proyectos h2 {
+    color: #fff;
+    font-family: var(--font-titulos);
+    font-size: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#proyectos p {
+    color: #fff;
+    font-family: var(--font-parrafos);
+    font-size: 35px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.card{
+    width: 450px;
+    background: var(--color-principal);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card-title{
+    font-family: var(--font-titulos);
+    font-size: 45px;
+    color: #000;
+    text-align: center;
+    background: var(--color-terciario);
+}
+
+.btn-primary{
+    position: relative;
+    font-family: var(--font-parrafos);
+    color: #fff;
+    font-size: 20px;
+    background: #000;
+    border: none;
+    left: 120px;
+    bottom: 20px;
+    padding: 10px 40px;
+}
+
+.card{
+    width: 450px;
+    background: var(--color-principal);
+    padding: 20px;
+}
+
+
+/* estilos de hoobies */
+
+#hoobies .card6{
+    padding: 150px 0 150px 60px;
+    background: var(--color-terciario);
+}
+#hoobies .card6 h2{
+    position: relative;
+    font-family: var(--font-titulos);
+    font-size: 150px;
+    color: #fff;
+    left: 120px;
+    top: 210px;
+
+}
+
+.circulo1{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: var(--color-principal);
+    z-index: 3;
+    left: 250px;
+}
+
+.circulo2{
+    position: relative;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: var(--color-transparente);
+    z-index: 2;
+    top: -26px;
+    left: 170px;
+}
+
+#hoobies .card7{
+    background: #fff;
+}
+
+.cont-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hoobie1,
+.hoobie2,
+.hoobie3,
+.hoobie4 {
+    position: relative;
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.hoobie1{
+    background: var(--color-cuarto);
+    left: 170px;
+}
+.hoobie1 img{
+    width: 130px;
+    height: 150px;
+}
+
+.hoobie1 p{
+    font-family: var(--font-parrafos);
+    font-size: 25px;
+    text-align: center;
+}
+
+.hoobie2{
+    background: var(--color-cuarto);
+    left: 300px;
+    margin-top: 50px ;
+}
+
+.hoobie2  img{
+    width: 130px;
+    height: 150px;
+}
+
+.hoobie2 p{
+    font-family: var(--font-parrafos);
+    font-size: 25px;
+    text-align: center;
+}
+
+.hoobie3{
+    background: var(--color-cuarto);
+    left: 300px;
+    margin-top: 50px ;
+}
+
+.hoobie3 img{
+    width: 130px;
+    height: 150px;
+}
+
+.hoobie3 p{
+    font-family: var(--font-parrafos);
+    font-size: 25px;
+    text-align: center;
+}
+
+.hoobie4{
+    background: var(--color-cuarto);
+    left: 170px;
+    margin-top: 50px ;
+}
+
+.hoobie4 img{
+    width: 130px;
+    height: 150px;
+}
+
+.hoobie4 p{
+    font-family: var(--font-parrafos);
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+/* estilos de estudios */
+
+.fondo{
+    padding: 40px 0;;
+    background: var(--color-terciario);
+    margin: 0 auto;
+    height: 1580px;
+}
+
+.c3{
+    height: 1580px;
+}
+
+.circulo4{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: var(--color-principal);
+    z-index: 3;
+    left: 250px;
+    top: 300px;
+
+}
+
+.circulo6{
+    position: relative;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: var(--color-transparente);
+    z-index: 2;
+    bottom: 620px;
+    left: 225px;
+    top: -320px;
+}
+
+.titulo2{
+    color: #000;
+    font-family: var(--font-titulos);
+    font-size: 140px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    top: 230px;
+}
+
+.card20,
+.card21,
+.card22,
+.card23{
+    position: relative;
+    width: 450px;
+    background: var(--color-secundario);
+    padding: 20px; 
+    color: #000;
+    font-family: var(--font-parrafos);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.card20{
+    right: -900px;
+    top: -1250px;
+}
+
+.card21{
+    right: 250px;
+    bottom: 1820px;
+}
+
+.card22{
+    right: -900px;
+    top: -1450px;
+}
+
+.card23{
+    right: 200px;
+    bottom: 2020px;
+}
+
+/* estilos de conctacto */
+
+#conctato{
+    padding: 40px;
+    background-image: url(../img/conctacto.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; 
+}
+
+#conctato::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-transparente);
+    z-index: -1;
+}
+
+.t2{
+    color: #fff;
+    font-family: var(--font-titulos);
+    font-size: 150px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.parrafo2{
+    color: #fff;
+    font-family: var(--font-parrafos);
+    font-size: 30px;
+    text-align: center;
+}
+
+.i4, .i5{
+    width: 80px;
+    height: 80px;
+    display: block ;
+    margin-bottom: 30px;
+}
+
+#conctato p {
+    font-family: var(--font-parrafos);
+    color: #fff;
+    font-size: 30px;
+    display: inline;
+}
+
+form{
+    background: #000000bd;
+    color: #fff;
+    font-family: var(--font-titulos);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column; /* Establece la dirección de los elementos como columna */
+    align-items: center; 
+}
+
+form input,
+form textarea,
+form button {
+    background: #000000c7;
+    border: none;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form button{
+    color: #fff;
+    font-family: var(--font-titulos);
+    font-size: 20px;
+    background: var(--color-principal);
+    padding: 0 20px;
+    border: none;
+}
+
+.input-field{
+    position: relative;
+}
+
+.input-field input{
+    width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 19px;
+    pointer-events: none;
+}
+
+input:focus ~ label{
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background: #000;
+}
